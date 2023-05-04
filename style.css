@@ -24,7 +24,7 @@ header {
   max-width: 100vw;
   color: var(--secondary-color);
   height: 73px;
-  z-index: 999;
+  z-index: 10;
   transition: transform 0.3s ease-in-out;
   top: 0;
   background: var(--primary-color);
@@ -94,6 +94,7 @@ header {
   border-radius: 20%;
   border: 2px solid rgba(158, 156, 156, 0.2);
   opacity: 0.7;
+  color: var(--secondary-color);
 }
 .user {
   width: 10%;
@@ -390,4 +391,85 @@ h5 {
   .footer .col {
     width: 100%;
   }
+}
+
+#coupon {
+  border-radius: 2%;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background: url("images/Hndcrft2.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px 400px;
+  z-index: 100;
+  position: absolute;
+  margin-top: -99%;
+  margin-left: 26%;
+  visibility: hidden;
+  color: white;
+  box-shadow: 1px 1px rgb(214, 211, 211);
+}
+
+.couponBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: right;
+  margin-top: 2px;
+  margin-right: 2px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 24px;
+}
+
+#coupon h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 37px;
+  margin-top: -18px;
+  padding-left: 15px;
+}
+
+.couponRow {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 37px 154px;
+}
+
+#cpnCode {
+  border: 2px dashed #000000;
+  padding: 10px 20px;
+  border-right: 0;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+#cpnBtn {
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 10px 20px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.circle1,
+.circle2 {
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 41%;
+  transform: translate(-50%);
+}
+
+.circle1 {
+  left: 0;
+}
+
+.circle2 {
+  right: -49px;
 }
